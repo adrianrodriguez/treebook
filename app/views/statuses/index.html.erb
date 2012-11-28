@@ -2,6 +2,10 @@
 <h1>News Feed</h1>
 </div>
 
+<div class="new-status">
+  <%= link_to 'New Status', new_status_path, class: 'btn btn-info' %>
+</div>
+
 <% @statuses.each do |status| %>
   <div class="status">
     <strong><p><%= status.name %></p></strong>
