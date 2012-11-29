@@ -8,7 +8,7 @@
 
 <% @statuses.each do |status| %>
   <div class="status">
-  <strong><p><Name/p></strong>
+  <strong><p>Name: <%= status.user.full_name %><p></strong>
   <p><%= status.content %></p>
 
     <div class="meta">
